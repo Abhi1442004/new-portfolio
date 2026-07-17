@@ -1,159 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tiparala Abhi | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiparala Abhi | Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- AOS Animation -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+    
 </head>
+
 <body>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="profile">
-      <img src="assets/profile.jpg" alt="Profile Picture">
-      <h1>Tiparala Abhi</h1>
-      <div class="social-links">
-        <a href="https://linkedin.com/in/abhi-tiparala-a08473324" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Abhi1442004" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:abhitiparala@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-      </div>
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+
+    <canvas id="network-bg"></canvas>
+
+<div class="mouse-light"></div>
+
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+<div class="shooting-star"></div>
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="profile">
+
+            <img src="assets/profile.png" alt="Profile Picture">
+
+            <h1>Tiparala Abhi</h1>
+
+            <div class="social-links">
+
+                <a href="https://linkedin.com/in/abhi-tiparala-a08473324" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/Abhi1442004" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <div id="scroll-progress"></div>
+
+            </div>
+
+ 
+
+        </div>
+
+        <nav class="nav-menu">
+
+            <ul>
+
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#education">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#internships">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Internships
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects">
+                        <i class="fa-solid fa-folder"></i>
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        <i class="fa-solid fa-bolt"></i>
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resume">
+                        <i class="fa-solid fa-file"></i>
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#certifications">
+                        <i class="fa-solid fa-certificate"></i>
+                        Certificates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <!-- Hero Section -->
+
+        <section class="hero" id="home">
+
+            <h1>Hi, I'm Abhi Tiparala</h1>
+
+            <p class="hero-subtitle">
+                Computer Science Engineering Graduate
+            </p>
+
+            <p class="hero-typing">
+                I'm a <span class="typing"></span>
+            </p>
+
+            <div class="stats">
+
+                <div class="stat-card">
+    <h3 class="counter" data-target="8.54">0</h3>
+    <p>CGPA</p>
+</div>
+
+<div class="stat-card">
+    <h3 class="counter" data-target="2">0</h3>
+    <p>Internships</p>
+</div>
+
+<div class="stat-card">
+    <h3 class="counter" data-target="2">0</h3>
+    <p>Projects</p>
+</div>
+
+<div class="stat-card">
+    <h3 class="counter" data-target="2026">0</h3>
+    <p>Graduate</p>
+</div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+
+        <section id="about" data-aos="fade-up">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I'm <strong>Tiparala Abhi</strong>, a Computer Science Engineering graduate from Swarnandhra College of Engineering and Technology with a CGPA of 8.54. I am passionate about software development and enjoy building modern web applications that solve real-world problems.
+    </p>
+
+    <p>
+        My technical expertise includes Java, Python, SQL, React, Node.js, Express.js, MySQL, and MongoDB. Through internships and hands-on projects, I have gained practical experience in frontend development, backend development, REST API integration, database management, and machine learning.
+    </p>
+
+    <p>
+        I have developed projects such as ShopNova, a full-stack e-commerce platform, and a Fraud Detection System using machine learning techniques. These projects helped me strengthen my problem-solving skills and gain experience working with real-world technologies and development workflows.
+    </p>
+
+    <p>
+        I am actively seeking opportunities as a Software Engineer and Full Stack Developer where I can contribute, learn from experienced professionals, and continue growing my technical expertise.
+    </p>
+
+</section>
+
+        <!-- Education -->
+
+       <section id="education" data-aos="fade-up">
+
+    <h2>Education</h2>
+
+    <div class="education-card">
+        <h3>B.Tech – Computer Science Engineering</h3>
+        <p>Swarnandhra College of Engineering and Technology</p>
+        <p>2022 – 2026</p>
+        <p><strong>CGPA:</strong> 8.54 / 10</p>
     </div>
 
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
-        <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-        <li><a href="#internships"><i class="fa-solid fa-briefcase"></i> Internships</a></li>
-        <li><a href="#projects"><i class="fa-solid fa-folder"></i> Projects</a></li>
-        <li><a href="#skills"><i class="fa-solid fa-bolt"></i> Skills</a></li>
-        <li><a href="#resume"><i class="fa-solid fa-file"></i> Resume</a></li>
-        <li><a href="#certifications"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
+    <div class="education-card">
+        <h3>Intermediate (MPC)</h3>
+        <p>Sri Surya Junior College</p>
+        <p>2020 – 2022</p>
+        <p><strong>Score:</strong> 70%</p>
+    </div>
 
-  <!-- Main Content -->
-  <main class="content">
+    <div class="education-card">
+        <h3>SSC</h3>
+        <p>Sunshine EM High School</p>
+        <p>2020</p>
+        <p><strong>Score:</strong> 78%</p>
+    </div>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <h1>Hi, I'm Abhi</h1>
-      <p>I'm a <span class="typing"></span></p>
-    </section>
+</section>
 
-    <!-- About -->
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>Aspiring Full Stack Developer with hands-on experience in both frontend and backend technologies. Proficient in building responsive web applications using HTML, CSS, JavaScript, React, Java, Spring Boot, and MongoDB. Strong understanding of REST APIs, component-based architecture, and collaborative development. Eager to contribute to impactful software solutions in fast-paced environments.</p>
-    </section>
+ <!-- Internships -->
+<section id="internships" data-aos="fade-up">
 
-    <!-- Education -->
-    <section id="education" data-aos="fade-up">
-      <h2>Education</h2>
-      <ul>
-        <li><b>B.Tech in Computer Science</b> – Swarnandhra College of Engg & Tech (2022 – 2026) | CGPA: 8.0</li>
-        <li><b>Intermediate (MPC)</b> – Sri Surya Junior College (2020 – 2022) | 70%</li>
-        <li><b>SSC</b> – Sunshine E.M High School (2020) | 78%</li>
-      </ul>
-    </section>
+    <h2>Internships</h2>
 
-    <!-- Internships -->
-    <section id="internships" data-aos="fade-up">
-      <h2>Internships</h2>
-      <ul>
-        <li><b>Frontend Developer Intern</b> – Micro IT Services (May 2025)<br>Worked on building responsive UI features using HTML, CSS, and JavaScript frameworks like React.js.</li>
-        <li><b>Full Stack Java Developer Intern</b> – AICTE (June 2025)<br>Developed backend REST APIs, integrated them with frontend apps, and managed MongoDB databases.</li>
-        <li><b>AI & ML Intern</b> – ExcelR Edtech Pvt. Ltd. (Aug 2024)<br>Completed a 6-week internship on machine learning algorithms, data preprocessing, and building AI models using Python libraries.</li>
-        <li><b>AWS Data Engineering Intern</b> – APSSDC (July 2024)<br>Gained hands-on experience in data pipelines, cloud computing with AWS, and data transformation processes.</li>
-        <li><b>Android Developer Intern</b> – APSSDC (Sept 2024)<br>Built Android applications with user-friendly interfaces, integrating APIs and ensuring performance optimization.</li>
-      </ul>
-    </section>
+    <!-- Frontend Developer Internship -->
+    <div class="internship-card">
 
-    <!-- Projects -->
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <ul>
-        <li><b>Netflix Clone</b> – React, TMDB API (Browse, Search, My List)</li>
-        <li><b>Password Generator</b> – Python-based secure password generator</li>
-        <li><b>Calculator</b> – Web-based calculator (HTML, CSS, JS)</li>
-        <li><b>Rock Paper Scissors</b> – Game vs computer (HTML, CSS, JS)</li>
-      </ul>
-    </section>
+        <h3>Frontend Developer Intern</h3>
 
-    <!-- Skills -->
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <div class="skills-category">
-        <h3>Languages</h3>
-        <p>HTML, CSS, JavaScript (ES6+), Java, Python</p>
-      </div>
-      <div class="skills-category">
-        <h3>Databases</h3>
-        <p>MongoDB, MySQL</p>
-      </div>
-      <div class="skills-category">
-        <h3>Frameworks & Libraries</h3>
-        <p>React.js, Node.js, Express.js, Spring Boot</p>
-      </div>
-      <div class="skills-category">
-        <h3>Tools & Others</h3>
-        <p>Git & GitHub, REST APIs, VS Code, Postman</p>
-      </div>
-    </section>
+        <p class="company">Micro IT</p>
 
-    <!-- Resume -->
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <p>
-        <a href="assets/resume.pdf" target="_blank">
-          <i class="fa-solid fa-file"></i> View My Resume
+        <p class="internship-year">
+            <strong>Year:</strong> 2025
+        </p>
+
+        <p><strong>Tech Stack:</strong></p>
+
+        <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>REST APIs</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+
+        <ul>
+            <li>Developed responsive and interactive user interfaces using modern frontend technologies.</li>
+            <li>Built and maintained 8+ reusable UI components to improve code reusability and consistency.</li>
+            <li>Integrated backend REST APIs for dynamic data rendering and seamless user experience.</li>
+            <li>Implemented responsive designs across desktop, tablet, and mobile devices.</li>
+            <li>Optimized frontend performance and reduced application load time by approximately 20%.</li>
+        </ul>
+
+    </div>
+
+    <!-- Full Stack Java Developer Internship -->
+    <div class="internship-card">
+
+        <h3>Full Stack Java Developer Intern</h3>
+
+        <p class="company">AICTE Virtual Internship</p>
+
+        <p class="internship-year">
+            <strong>Year:</strong> 2025
+        </p>
+
+        <p><strong>Tech Stack:</strong></p>
+
+        <div class="tech-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>MySQL</span>
+            <span>REST APIs</span>
+            <span>Postman</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+
+        <ul>
+            <li>Designed and developed backend modules for web applications using Java technologies.</li>
+            <li>Implemented and tested 10+ REST APIs supporting CRUD operations and user management.</li>
+            <li>Worked with MySQL databases for data storage, retrieval, and query optimization.</li>
+            <li>Performed API validation, debugging, and testing using Postman to improve reliability.</li>
+            <li>Gained practical experience in backend architecture, database integration, and API development.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+             <!-- Projects -->
+<section id="projects" data-aos="fade-up">
+
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+
+        <h3>🛒 ShopNova – E-Commerce Platform</h3>
+
+        <p>
+            Developed a full-stack e-commerce platform with secure JWT authentication,
+            product management, shopping cart functionality, and order processing.
+        </p>
+
+        <p>
+            Designed and implemented 12+ REST APIs for authentication, product
+            management, user operations, and order handling.
+        </p>
+
+        <p>
+            Optimized database queries and backend performance, improving response
+            time and query efficiency by approximately 15%.
+        </p>
+
+        <p><strong>Tech Stack:</strong></p>
+
+        <div class="tech-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>PostgreSQL</span>
+            <span>TypeORM</span>
+            <span>JWT</span>
+        </div>
+
+        <a href="https://github.com/Abhi1442004/ShopNova"
+           target="_blank"
+           class="project-btn">
+            <i class="fa-brands fa-github"></i>
+            GitHub
         </a>
-      </p>
-    </section>
 
-    <!-- Certificates -->
-    <section id="certifications" data-aos="fade-up">
-      <h2>Certificates</h2>
-      <ul>
-        <li><a href="assets/micro-it.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> Frontend Internship – Micro IT</a></li>
-        <li><a href="assets/java-fsd.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> Full Stack Java – AICTE</a></li>
-        <li><a href="assets/ai-ml.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> AI & ML – ExcelR Edtech Pvt. Ltd.</a></li>
-        <li><a href="assets/aws-data.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> AWS Data Engineering – APSSDC</a></li>
-        <li><a href="assets/android-dev.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> Android Development – APSSDC</a></li>
-        <li><a href="assets/java-gl.pdf" target="_blank"><i class="fa-solid fa-certificate"></i> Java Programming – Great Learning</a></li>
-      </ul>
-    </section>
+    </div>
 
-    <!-- Contact -->
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p><i class="fa-solid fa-envelope"></i> abhitiparala@gmail.com</p>
-      <p><i class="fa-solid fa-phone"></i> 9346653876</p>
-      <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/abhi-tiparala-a08473324" target="_blank">LinkedIn</a></p>
-      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Abhi1442004" target="_blank">GitHub</a></p>
-    </section>
+    <!-- Project 2 -->
+    <div class="project-card">
 
-  </main>
+        <h3>🛡️ Fraud Detection System</h3>
 
-  <!-- JS -->
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        <p>
+            Developed a machine learning-based fraud detection system using
+            Logistic Regression and Support Vector Machine (SVM) algorithms
+            to identify suspicious transactions.
+        </p>
+
+        <p>
+            Processed and analyzed 1000+ transaction records through data
+            preprocessing, feature engineering, and model evaluation techniques.
+        </p>
+
+        <p>
+            Improved prediction accuracy by 12–15% through model tuning,
+            optimization, and performance analysis.
+        </p>
+
+        <p><strong>Tech Stack:</strong></p>
+
+        <div class="tech-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQLite</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-Learn</span>
+        </div>
+
+        <a href="https://github.com/Abhi1442004/a_multiperspective_fraud_detection"
+           target="_blank"
+           class="project-btn">
+            <i class="fa-brands fa-github"></i>
+            GitHub
+        </a>
+
+    </div>
+
+</section>
+        <!-- Skills -->
+
+        <section id="skills" data-aos="fade-up">
+
+    <h2>Skills</h2>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+
+        <div class="skill-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>SQL</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-laptop-code"></i> Frontend Technologies</h3>
+
+        <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-server"></i> Backend Technologies</h3>
+
+        <div class="skill-tags">
+            <span>Node.js</span>
+            <span>Express.js</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+
+        <div class="skill-tags">
+            <span>MySQL</span>
+            <span>MongoDB</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+
+        <div class="skill-tags">
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Postman</span>
+            <span>VS Code</span>
+        </div>
+    </div>
+
+    <div class="skills-group">
+        <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+
+        <div class="skill-tags">
+            <span>Logistic Regression</span>
+            <span>SVM</span>
+        </div>
+    </div>
+
+</section>
+
+        <!-- Resume -->
+<section id="resume" data-aos="fade-up">
+
+    <h2>Resume</h2>
+
+    <div class="resume-card">
+
+        <i class="fas fa-file-alt resume-icon"></i>
+
+        <h3>Professional Resume</h3>
+
+        <p>
+            <p>
+    Explore my resume to learn more about my education,
+    internships, projects, and technical expertise.
+</p>
+        </p>
+
+        <a href="assets/resume.pdf"
+           target="_blank"
+           class="resume-btn">
+
+            <i class="fas fa-eye"></i>
+            View Resume
+
+        </a>
+
+    </div>
+
+</section>
+
+       <!-- Certificates -->
+<section id="certifications" data-aos="fade-up">
+
+    <h2>Certificates</h2>
+
+    <div class="certificate-grid">
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Full Stack Java Developer</h3>
+            <p>AICTE</p>
+            <a href="assets/java-fsd.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Frontend Developer Internship</h3>
+            <p>Micro IT</p>
+            <a href="assets/micro-it.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI & Machine Learning</h3>
+            <p>ExcelR</p>
+            <a href="assets/ai-ml.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>AWS Data Engineering</h3>
+            <p>APSSDC</p>
+            <a href="assets/aws-data.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-brands fa-android"></i>
+            <h3>Android Development</h3>
+            <p>APSSDC</p>
+            <a href="assets/android-dev.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java Programming</h3>
+            <p>Great Learning</p>
+            <a href="assets/java-gl.pdf" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+            <p>Kaggle</p>
+            <a href="assets/python-kaggle.png" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Intro to SQL</h3>
+            <p>Kaggle</p>
+            <a href="assets/intro-sql-kaggle.png" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <i class="fa-solid fa-server"></i>
+            <h3>Advanced SQL</h3>
+            <p>Kaggle</p>
+            <a href="assets/advanced-sql-kaggle.png" target="_blank" class="certificate-btn">
+                View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Contact -->
+
+        <section id="contact" data-aos="fade-up">
+
+            <h2>Contact</h2>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                abhitiparala@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9346653876
+            </p>
+
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+
+                <a href="https://linkedin.com/in/abhi-tiparala-a08473324"
+                    target="_blank">
+
+                    LinkedIn Profile
+
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-github"></i>
+
+                <a href="https://github.com/Abhi1442004"
+                    target="_blank">
+
+                    GitHub Profile
+
+                </a>
+            </p>
+
+
+            
+<footer>
+    <p>© 2026 Tiparala Abhi</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+</footer>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+    <!-- AOS Animation -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+
+
 </body>
+
+<div class="animated-bg">
+    <div class="aurora"></div>
+    <div class="particles"></div>
+
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+</div>
+
 </html>
