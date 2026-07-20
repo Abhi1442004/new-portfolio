@@ -122,19 +122,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-window.addEventListener("scroll", () => {
-    const winScroll =
-        document.documentElement.scrollTop;
 
-    const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-
-    const scrolled = (winScroll / height) * 100;
-
-    document.getElementById("scroll-progress").style.height =
-        scrolled + "%";
-});
 
 // ==============================
 // Fade In Effect
@@ -295,5 +283,3 @@ document.addEventListener("mousemove", e => {
     light.style.left = e.clientX - 200 + "px";
     light.style.top = e.clientY - 200 + "px";
 });
-
-

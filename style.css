@@ -30,19 +30,12 @@ body {
     top: 0;
     overflow-y: auto;
     padding: 30px 20px;
-    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow:none;
+    border-right:1px solid rgba(0,230,210,.15);
+
 }
 
-.sidebar::after{
-    content:"";
-    position:absolute;
-    right:0;
-    top:0;
-    width:3px;
-    height:100%;
-    background:#00bfa6;
-    box-shadow:0 0 15px #00bfa6;
-}
+
 
 .profile img{
     box-shadow:0 0 25px rgba(0,191,166,0.4);
@@ -94,15 +87,7 @@ body {
     color: #fff;
 }
 
-#scroll-progress {
-    position: fixed;
-    left: 260px;
-    top: 0;
-    width: 4px;
-    height: 0%;
-    background: #00bfa6;
-    z-index: 1000;
-}
+
 
 /* =========================
    NAVIGATION
@@ -1141,5 +1126,3 @@ body::before{
         opacity:0;
     }
 }
-
-
